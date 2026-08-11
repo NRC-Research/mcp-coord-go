@@ -27,7 +27,7 @@ per-client: each session would get its own private instance.)
 | `coord_reserve` | Advisory reservation of shared resources (paths, repos, hostnames — any agreed string). Conflicts error with holder + reason + expiry. |
 | `coord_release` | Release reservations you hold. |
 
-Every call carries your stable `agent` name (e.g. `resgc-packer`, `k8s-llm`) — that's
+Every call carries your stable `agent` name (e.g. `image-builder`, `docs-writer`) — that's
 the identity and the heartbeat. Reservations auto-expire (default 60 min TTL).
 
 ## Run

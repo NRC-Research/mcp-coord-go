@@ -189,7 +189,7 @@ func (s *Store) appendThreadMarkdown(m *Message) {
 // ---------------------------------------------------------------------------
 
 type sendIn struct {
-	Agent   string   `json:"agent" jsonschema:"your agent name (stable identity, e.g. resgc-packer)"`
+	Agent   string   `json:"agent" jsonschema:"your agent name (stable identity, e.g. image-builder)"`
 	Project string   `json:"project,omitempty" jsonschema:"optional project/repo this agent works on"`
 	To      []string `json:"to" jsonschema:"recipient agent names, or [\"*\"] to broadcast to all"`
 	Subject string   `json:"subject" jsonschema:"short subject line"`
